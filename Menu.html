@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Kimmy's Cupcake Shop</title>
+     <link rel="icon" type="image/png" href="C:\Users\KIM IRISH\Desktop\LD1_2BSARIEGO_FINALS/Background.jpg">
+    <style>
+        body {
+            background-image: url('http://www.flavourtownbakery.co.uk/media/wysiwyg/Fulham/flavourtown-bakery-shop-in-fulham.jpeg'); 
+            position: absolute;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center all text content */
+        }
+        header {
+            font-size: 30px;
+            font-family: 'Pacifico', cursive;
+            color: deeppink;
+            padding: 1px 0;
+            text-align: center;
+            position: relative;
+        }
+        .about-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #ff80b3;
+            border-radius: 50px;
+            margin: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 220px;
+            height: auto;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            object-fit: cover;
+        }
+        .menu-item p {
+            padding: 10px 0 5px;
+            font-weight: bold;
+        }
+        .menu-item ul {
+            text-align: left;
+            padding-left: 15px;
+            margin: 0;
+            list-style-type: disc;
+        }
+
+        /* Center the button */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust this as needed */
+        }
+        .back-home {
+             font-family: Arial, sans-serif;
+             font-size: 10px;
+            position: absolute;
+            left: 20px;
+            top: 20%;
+            transform: translateY(-50%);
+            background-color: #ff3385;
+            color: white;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .back-home:hover {
+            background-color: #ff80b3;
+        }
+
+
+        footer {
+            background-color: #ff80b3;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kimmy's Cupcake Shop Menu</h1>
+     <a href="Kimmys-Cupcake-Shop.html" class="back-home">Back to Home</a>
+</header>
+<section class="about-section">
+    <h2>Our Delicious Cupcake Flavors! 🎂✨</h2>
+    <p>We create magical, mouthwatering cupcakes made with love! From classic flavors to fun designs, we bake happiness in every bite. 💖</p>
+</section>
+
+
+<main class="menu-section">
+    <h2></h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="https://iscreamforbuttercream.com/wp-content/uploads/2022/08/mini-chocolate-cupcakes-wide-with-wm-3-of-19.jpg" alt="Chocolate Cupcakes">
+            <p>Chocolate Flavor - ₱125.00</p> 
+          
+            <ul>
+                <li>Rich cocoa powder</li>
+                <li>Dark chocolate chips</li>
+                <li>Fresh milk</li>
+                <li>Butter</li>
+                <li>Flour and sugar</li>
+            </ul>
+             <p>"A bite of chocolate cupcake is like a warm hug for your taste buds—rich, velvety, and simply irresistible!"</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.yourcupofcake.com/wp-content/uploads/2013/08/Strawberry-Red-Velvet-Cupcakes1.jpg" alt="Mocha Cupcakes">
+            <p>Strawberry Flavor - ₱150.00</p>
+            <ul>
+                <li>Fresh strawberry puree</li>
+                <li>Buttercream frosting</li>
+                <li>Vanilla extract</li>
+                <li>Eggs and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+              <p>Pretty in pink, delicious in every way—these strawberry cupcakes are love at first taste!"</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://i1.wp.com/www.bostongirlbakes.com/wp-content/uploads/2018/02/IMG_7228.jpg" alt="Strawberry Cupcakes">
+            <p>Mocha Flavor - ₱175.00</p>
+            <ul>
+                <li>Freshly brewed coffee</li>
+                <li>Rich cocoa powder</li>
+                <li>Butter</li>
+                <li>Milk and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+              <p>"A mocha lover’s dream—deep chocolate flavor with a smooth coffee kick, topped with luscious frosting!"</p>
+        </div>
+
+         <div class="menu-item">
+            <img src="https://www.thewickednoodle.com/wp-content/uploads/2023/11/cupcake-and-cake-toppings-list.jpg">
+            <p>With Toppings - ₱200.00</p>
+            <ul>
+                <li>Fresh berries (strawberries, blueberries, blackberries)</li>
+                <li>Whipped cream</li>
+                <li>Chocolate drizzle</li>
+                <li>Buttercream frosting</li>
+                <li>Cupcake batter</li>
+            </ul>
+             <p>"Luscious berries resting on a swirl of frosting, adding the perfect pop of color and flavor!"</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://cocavo.co.nz/wp-content/uploads/2020/04/cupcake.jpg" alt="Cupcakes with Syrup Toppings">
+            <p>With Syrup Toppings - ₱225.00</p>
+            <ul>
+                <li>Buttercream frosting</li>
+                <li>Assorted syrup toppings</li>
+                <li>Vanilla cupcake base</li>
+                <li>Eggs and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+             <p>"A swirl of sweetness, a drizzle of decadence—because chocolate makes everything better!"</p>
+        </div>
+        <div class="menu-item">
+            <img src="http://cdn.shopify.com/s/files/1/2404/1979/products/vanillacupcakerain_1200x1200.jpg?v=1539815061" alt="Cupcakes with Sprinkles">
+            <p>With Sprinkles - ₱150.00</p>
+            <ul>
+                <li>Colorful candy sprinkles</li>
+                <li>Vanilla cupcake base</li>
+                <li>Buttercream frosting</li>
+                <li>Eggs and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+             <p>"Soft, fluffy, and topped with a rainbow of sprinkles—because dessert should always be delightful!"</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/originals/c9/be/e2/c9bee2d50f23a9801bae9b0e74d9698f.jpg" alt="Decorated Cupcakes">
+            <p>Decorated Cupcakes - ₱250.00</p>
+            <ul>
+                <li>Creative fondant decorations</li>
+                <li>Buttercream frosting</li>
+                <li>Vanilla cupcake base</li>
+                <li>Eggs and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+            <p>"The best decorations aren’t just on top—they’re made with love!"</p>
+        </div>
+        <div class="menu-item">
+            <img src="http://cdn.shopify.com/s/files/1/0769/7473/products/edible_image_cupcake_marvel_1024_800x.jpg?v=1593752672" alt="Personalized Cupcakes">
+            <p>Personalized Cupcakes - ₱300.00</p>
+            <ul>
+                <li>Custom designs and messages</li>
+                <li>Vanilla or chocolate base</li>
+                <li>Buttercream frosting</li>
+                <li>Eggs and sugar</li>
+                <li>All-purpose flour</li>
+            </ul>
+            <p>"Your favorite flavors, your favorite designs—one perfect bite at a time!"</p>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <p>PROGRAMMED AND DEVELOPED BY KIM IRISH P. SARIEGO</p>
+</footer>
+
+</body>
+</html>

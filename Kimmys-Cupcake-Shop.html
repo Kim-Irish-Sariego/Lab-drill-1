@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimmy's Cupcake Shop</title>
+    <link rel="icon" type="image/png" href="C:\Users\KIM IRISH\Desktop\LD1_2BSARIEGO_FINALS/Background.jpg">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        body {
+            background-color: #f8d0e6; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('http://www.flavourtownbakery.co.uk/media/wysiwyg/Fulham/flavourtown-bakery-shop-in-fulham.jpeg');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            font-size: 30px;
+            font-family: 'Pacifico', cursive;
+            color: deeppink;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav {
+            background-color: deeppink; 
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        nav:hover {
+            opacity: 1;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #ff3385;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 10px;
+            text-align: center;
+            color: BLACK;
+            height: 100vh; 
+        }
+
+        .content-container {
+            background-color: hotpink;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .button {
+            background-color: #ff3385;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #ff80b3;
+            animation: bounce 0.5s;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer {
+            background-color: #ff80b3;
+            color: black;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kimmy's Cupcake Shop</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Order.html">Order Now</a>
+    <a href="About-us.html">About Us</a>
+</nav>
+
+<main id="home">
+    <div class="content-container">
+        <h1>Welcome to Our Cupcake Shop!</h1>
+        <h2>Delicious cupcakes made with love. Choose from a wide variety of flavors!</h2>
+    </div>
+    
+    <div class="button-container">
+        <a href="Homepage.html" class="button">Visit Now</a>
+    </div>
+</main>
+
+<footer>
+    <p>PROGRAMMED AND DEVELOPED BY KIM IRISH P. SARIEGO</p>
+</footer>
+
+</body>
+</html>

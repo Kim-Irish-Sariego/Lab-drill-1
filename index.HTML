@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimmy's Cupcake Shop - Login</title>
+     <link rel="icon" type="image/png" href="C:\Users\KIM IRISH\Desktop\LD1_2BSARIEGO_FINALS/Background.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8d0e6; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('http://www.flavourtownbakery.co.uk/media/wysiwyg/Fulham/flavourtown-bakery-shop-in-fulham.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        header {
+           
+            font-size: 32px;
+            font-family: 'Pacifico', cursive;
+           color: #ff3385;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #ff66b2; 
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff3385; 
+        }
+        main {
+            padding: 20px;
+            color: white;
+            height: 30vh; 
+        }
+        footer {
+            background: linear-gradient(135deg, #ff80b3, #ff3385);
+            color: BLACK;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-weight: bold;
+        }
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 102, 178, 0.9);
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input {
+            width: 80%;
+            padding: 15px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff3385;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff80b3;
+        }
+        #message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kimmy's Cupcake Shop</h1>
+</header>
+
+<main>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="validateLogin()">Login</button>
+        <p id="message"></p>
+    </div>
+</main>
+
+<footer>
+    <p>PROGRAMMED AND DEVELOPED BY KIM IRISH P. SARIEGO</p>
+</footer>
+
+<script>
+    let attempts = 0;
+    let lockout = false;
+    const correctUsername = "IRISH";
+    const correctPassword = "123";
+
+    function validateLogin() {
+        if (lockout) return;
+        
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let message = document.getElementById("message");
+        
+        if (username === correctUsername && password === correctPassword) {
+            message.style.color = "green";
+            message.innerText = "Login successful!";
+            window.location.href = "Kimmys-Cupcake-Shop.html";
+        } else {
+            attempts++;
+            if (attempts >= 2) {
+                lockout = true;
+                message.innerText = "Too many failed attempts. Please wait 10 seconds.";
+                setTimeout(() => {
+                    attempts = 0;
+                    lockout = false;
+                    message.innerText = "You can try again now.";
+                    document.getElementById("password").value = "";
+                }, 10000);
+            } else {
+                message.innerText = "Incorrect username or password. Try again.";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
